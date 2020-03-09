@@ -165,7 +165,7 @@ $newrecette->postrecette('title', 'content', 'image', 'duree', 'persons', 'user'
 
 
 
-    <div class="bg-gray-400  flex-auto px-5 py-12">
+    <div class="bg-pink-200  flex-auto px-5 py-12">
        
         <div class="max-w-3xl mx-auto">
             <h1 class="text-center font-calibri text-black text-4xl pb-4"><i class="far fa-edit"></i>Ajouter une recette :</h1>
@@ -173,14 +173,14 @@ $newrecette->postrecette('title', 'content', 'image', 'duree', 'persons', 'user'
                 <div class="flex mb-4 -mx-2">
                     <div class="w-1/2 px-3">
                         <label class="pt-2 font-calibri block border-gray-200 rounded ">Ajouter le titre :</label>
-                        <input type="text" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800 " id="tj" name="title" />
+                        <input type="text" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 " id="tj" name="title" />
                     </div>
                 </div>
 
                 <div class="mx-1">
                     <div>
                         <label class=" font-calibri block">Ajouter du contenu :</label>
-                        <textarea class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800" id="textd" name="content"></textarea>
+                        <textarea class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="textd" name="content"></textarea>
                     </div>
                 </div>
 
@@ -194,14 +194,14 @@ $newrecette->postrecette('title', 'content', 'image', 'duree', 'persons', 'user'
                 <div class="mx-1">
                     <div>
                         <label class="pt-2 font-calibri block">Ajouter une durée :</label>
-                        <input type="text" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800" name="duree" />
+                        <input type="text" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" name="duree" />
                     </div>
                 </div>
 
                 <div class="mx-1">
                     <div>
                         <label class="pt-2 font-calibri block">Ajouter un nombre de personne:</label>
-                        <input type="number" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800" name="persons" />
+                        <input type="number" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" name="persons" />
                     </div>
                 </div>
 
@@ -220,13 +220,13 @@ $newrecette->postrecette('title', 'content', 'image', 'duree', 'persons', 'user'
                 <div class="mx-1">
                     <div>
                         <label class="pt-2 font-calibri block">Ajouter une quantité:</label>
-                        <input type="number" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800" name="quantity" />
+                        <input type="number" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" name="quantity" />
                     </div>
                 </div>
 
 
                 <div class="flex justify-center">
-                    <button type="submit" id="validation" class="mt-6 bg-orange-400 text-white rounded py-2 px-4 hover:bg-yellow-800 text-black hover:text-white px-10 p-1" name="ajouter">Ajouter</button>
+                    <button type="submit" id="validation" class="mt-6 bg-blue-300 text-white rounded py-2 px-4 hover:bg-blue-400 text-black hover:text-white px-10 p-1" name="ajouter">Ajouter</button>
                 </div>
 
             </form>
@@ -261,35 +261,35 @@ $newrecette->postrecette('title', 'content', 'image', 'duree', 'persons', 'user'
     </script>
 </body>
 <footer class="">
-    <div class="bg-orange-400  md:flex ">
+    <div class="   md:flex " id="accueilnav">
 
-        <div class="border-orange-400">
+        <div class="">
             <a href="index.php">
-                <img src="img/unnamed.jpg" class="border-orange-400 border-4 pt-20" alt="la description textuelle de ton image"id="logosite" />
+                <img src="img/unnamed.jpg" class="  pt-20" alt="la description textuelle de ton image"id="logosite" />
             </a>
         </div>
 
-        <div class="w-full text-justify lg:mx-auto xl:mx-auto px-10 py-10  w-1/4">
-            <h4 class="border-b border-orange-800 mb-6">A PROPOS</h4>
+        <div class="w-full text-black text-justify lg:mx-auto xl:mx-auto px-10 py-10  w-1/4">
+            <h4 class="border-b border-green-300 mb-6">A PROPOS</h4>
             <div class="mx-auto  text-justify">
-                <li><a href="">Condition géneral d'utilisateur</a></li>
+                <li><a href="">Conditions géneral d'utilisateurs</a></li>
                 <li><a href="">A propos de nous</a></li>
                 <li><a href="">Notre Histoire</a></li>
-                <li><a href="">informations géneral</a></li>
-                <li><a href="">...</a></li>
+                <li><a href="">Informations géneral</a></li>
+                
             </div>
 
 
         </div>
 
-        <div class="w-full xl:mx-auto px-10 py-10 w-1/4 ">
-            <h4 class="border-b border-orange-800 mb-6">SUIVEZ NOUS</h4>
+        <div class="text-black w-full xl:mx-auto px-10 py-10 w-1/4 ">
+            <h4 class="border-b border-green-300 mb-6">SUIVEZ NOUS</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio eum soluta neque. Doloremque vero odio possimus cum quae at dolorum assumenda facilis sed, laborum obcaecati in reiciendis eius, necessitatibus deserunt.. </p>
 
         </div>
 
-        <div class="w-full mx-auto px-10 py-10 w-1/4">
-            <h4 class="border-b border-orange-800 mb-6">MENTIONS LEGALES</h4>
+        <div class="w-full text-black mx-auto px-10 py-10 w-1/4">
+            <h4 class="border-b border-green-300 mb-6">MENTIONS LEGALES</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>

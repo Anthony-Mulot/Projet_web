@@ -2,24 +2,24 @@
 <html lang="fr">
 
 <head>
-<?php    
-session_start();
-
-if (session_id() == "") {
+    <?php
     session_start();
-}
 
-include_once('bdd.php');
-?>
-<title>Projet CESI</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    if (session_id() == "") {
+        session_start();
+    }
+
+    include_once('bdd.php');
+    ?>
+    <title>Projet CESI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 
-<body class=" ">
+<body class="bg-pink-100 ">
 
     <header class="w-full " id="navbar">
 
@@ -29,7 +29,8 @@ include_once('bdd.php');
             <div class="">
                 <nav class="flex items-center justify-between flex-wrap  ">
                     <div class="flex items-center flex-no-shrink text-white mr-6 ">
-                        <img src="img\unnamed.jpg" alt="" class="w-32 xl:h-32  mr-2 rounded-full ">
+
+                        <img src="img\azerty.png" alt="logo_site" class="w-32 xl:h-32  mr-2 rounded-full ">
                     </div>
                     <div class="block lg:hidden">
                         <button class="navbar-burger flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
@@ -48,39 +49,39 @@ include_once('bdd.php');
                                 <?php
                                 if (isset($_SESSION['login'])) {
 
-                                    echo '<a href="accueilAdmin.php" id="accueilnav" class="block mb-2 xl:mb-0 lg:inline-block text-md font-bold  hover: mx-2  xl:p-2  rounded-lg">
+                                    echo '<a href="accueilAdmin.php" id="accueilnav" class="block  mb-2 xl:mb-0 lg:inline-block text-md font-bold  hover: mx-2  xl:p-2  rounded-lg">
                                             ADMIN
                                         </a>
-                                        <a href="compte.php" class="block lg:inline-block text-md font-bold   text-white   hover: mx-2  xl:p-2  rounded-lg">
+                                        <a href="compte.php" class="block lg:inline-block text-md font-bold  hover:text-green-200 text-gray-700   hover: mx-2  xl:p-2  rounded-lg">
                                         MON COMPTE
                                     </a>
                                   
-                                      <ul class="flex mb-2 xl:mb-0 flex-wrap text-md font-bold pt-2  text-white  rounded-lg " id="accueilnav">
+                                      <ul class="flex mb-2 xl:mb-0 flex-wrap text-md font-bold pt-2  text-gray-700  rounded-lg " id="accueilnav">
                                     
                                     <li class="relative  group   " id="navbar">
-                                    <a class="font-semibold whitespace-no-wrap  ml-2 xl:ml-0  text-white font-bold text-sm"
-                                        href="">
-                                        <span class="firstlevel">LES RECETTES</span>
+                                    <a class="font-semibold whitespace-no-wrap  ml-2 xl:ml-0  text-gray-700 font-bold text-sm"
+                                        >
+                                        <span class=" hover:text-green-200 firstlevel">LES RECETTES</span>
                                     </a>
                                     <ul class="absolute left-0 top-0 mt-6 p-2 rounded-lg shadow-lg  z-10 hidden group-hover:block" id="barre">
                                         
                                         <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
                                         </svg>
                                         <li
-                                        class="p-1 whitespace-no-wrap  text-sm md:text-base text-white hover:text-gray-800 hover:bg-gray-100">
-                                        <a class="px-2 py-1"
+                                        class="p-1 whitespace-no-wrap  text-sm md:text-base text-gray-700  hover:bg-blue-300">
+                                        <a class="px-2  py-1"
                                             href="afficheRecette.php">
                                             <span class="">Mes recettes</span>
                                         </a>
                                         </li>
                                         <li
-                                        class="p-1 whitespace-no-wrap  text-sm md:text-base text-white hover:text-gray-800 hover:bg-gray-100">
+                                        class="p-1 whitespace-no-wrap  text-sm md:text-base text-gray-700 hover:text-blue-800 hover:bg-blue-300">
                                         <a class="px-2 py-1" href="AjoutRecette.php">
                                             <span class="">Ajouter une recette</span>
                                         </a>
                                         </li>
                                         <li
-                                        class="p-1 whitespace-no-wrap  text-sm md:text-base text-white hover:text-gray-800 hover:bg-gray-100">
+                                        class="p-1 whitespace-no-wrap  text-sm md:text-base text-gray-700  hover:bg-blue-300">
                                         <a class="px-2 py-1" href="allrecette.php">
                                             <span class="">Afficher toutes les recettes</span>
                                         </a>
@@ -90,17 +91,17 @@ include_once('bdd.php');
                                 </ul>
                                                                 
                                
-                                    <a href="shoppingList.php" class="block mb-2 xl:mb-0 lg:inline-block text-md font-bold   text-white   hover: mx-2  xl:p-2  rounded-lg">
+                                    <a href="shoppingList.php" class="block mb-2 hover:text-green-200 xl:mb-0 lg:inline-block text-md font-bold   text-gray-700   hover: mx-2  xl:p-2  rounded-lg">
                                         SHOPPING LIST
                                     </a>
                                         ';
                                 } else {
                                     echo '  
                                    
-                                    <a href="allrecette.php" class="block lg:inline-block text-md font-bold pb-2 xl:pb-0  text-white   hover: mx-2  xl:p-2  rounded-lg">
+                                    <a href="allrecette.php" class="block  hover:text-green-200 lg:inline-block text-md font-bold pb-2 xl:pb-0  text-gray-700   hover: mx-2  xl:p-2  rounded-lg">
                                     LES RECETTES
                                 </a>
-                                <a href="form.php" class="block lg:inline-block text-md font-bold pb-4 xl:pb-0  text-white   hover: mx-2  xl:p-2  rounded-lg">
+                                <a href="form.php" class="block lg:inline-block hover:text-green-200 text-md font-bold pb-4 xl:pb-0  text-gray-700   hover: mx-2  xl:p-2  rounded-lg">
                                     NOUS CONTACTER
                                 </a>';
                                 } ?>
@@ -120,14 +121,14 @@ include_once('bdd.php');
                         <div class="xl:flex xl:ml-auto items-center">
 
                             <div class="relative  items-center text-gray-600">
-                                <form method="POST"> 
-                                    <input type="text" name="titre_des_recettes" placeholder="Rechercher" class="bg-white h-10 px-4 -mr-2   xl:w-64 rounded-l-lg text-sm focus:outline-none" value ="<?php if (isset($_POST['titre_des_recettes'])) {
-                                   } ?>" />
-                                    
-                                    <button type ="submit" id="barre" class="text-white font-bold py-2 px-4 rounded-r-lg">Entrer</button>
+                                <form method="POST">
+                                    <input type="text" name="titre_des_recettes" placeholder="Rechercher" class="bg-white h-10 px-4 -mr-2   xl:w-64 rounded-l-lg text-sm focus:outline-none" value="<?php if (isset($_POST['titre_des_recettes'])) {
+                                                                                                                                                                                                    } ?>" />
+
+                                    <button type="submit" id="barre" class="text-white font-bold py-2 px-4 rounded-r-lg">Entrer</button>
                                 </form>
                             </div>
-             
+
                             <div class="flex pl-4 justify-center mt-6 xl:mt-0">
 
                                 <?php
@@ -208,32 +209,74 @@ include_once('bdd.php');
         </div>
     </div>
 
-    <div class=" lg:flex px-8 ">
-        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('img/malbouffe.jpg')" title="Woman holding a mug">
+
+    <div class="border-l-4 border-green-300 mx-4">
+        <h2 class="text-center text-2xl underline">La diversification alimentaire</h2>
+        <p class="mb-4 ml-6 mt-8">En tant que parent , nous sommes sans cesse en train de se poser de nombreuses questions tel que :
+            Tu penses qu'on peut lui donner ca ? il est encore trop petit non ? etc.
+
+            Nous allons donc vous éclaircir sur plusieurs points concernant les aliments que vous pouvez donner à votre enfant.
+
+        </p>
+        <h4 class="mb-6 pl-2 underline ">Les différentes étapes : </h4>
+
+        <p class="mb-4 ml-10"> <strong>-</strong> Début et première phase de la diversification alimentaire : de <strong>4 à 6 mois</strong> Jusqu'à 6 mois, l'allaitement
+            exclusif au lait maternel, ou au lait infantile, couvre tous les besoins alimentaires de l'enfant.
+            Après 4 mois, le lait maternel ou le « lait » infantile ne suffit plus à couvrir tous les
+            besoins de l'enfant.</br>
+
+            <p class="mb-4 ml-16">A 4 mois, votre bébé commence à savoir mastiquer des aliments un peu plus solides
+                et il peut mieux les déglutir. Ses capacités digestives sont plus développées.</p>
+
+            <p class="mb-4 ml-10"> <strong>-</strong> Seconde phase de la diversification : <strong> 6 mois à 3 ans </strong> L'enfant a maintenant une alimentation
+                variée, qui va se rapprocher petit à petit de la vôtre, mais dans des quantités adaptées à son
+                âge. Mais, il a encore des besoins spécifiques et des capacités physiologiques limitées, et il
+                ne mangera pas comme les grands avant l'âge de 3 ans.</p>
+        </p>
+
+        <p class="mt-8 ml-6 text-center mb-6 border-4 text-xl border-green-400">A partir de quel âge peut-on commencer à mettre de la viande / oeuf / poisson et
+            quelle quantité (en cuillère à café) ?
+            <p class="">A partir de 6 / 8 mois. Le plus simple est d'attendre environ 100g de purée pour introduire la
+                viande.
+
+                Toutes les viandes, tous les poissons. Les oeufs doivent être consommés durs. La viande et
+                le poisson cuits.</p>
+        </p>
+        <div class="flex-1">
+            <table class="border-4 border-black justify-center mx-auto ">
+                <tr>
+                    <td class="border-2  px-2 text-center border-black">Age</td>
+                    <td class="border-2 px-2 text-center border-black">Quantité</td>
+                    <td class="border-2 px-2 text-center border-black">Grammes/Jour</td>
+                </tr>
+                <tr>
+                    <td class="border-2 px-2 text-center border-black">6 à 12 Mois</td>
+                    <td class="border-2 px-2 text-center border-black">2 cuillères à café</td>
+                    <td class="border-2 px-2 text-center border-black"> 10 g</td>
+                </tr>
+                <tr>
+                    <td class="border-2 px-2 text-center border-black">1 à 2 ans</td>
+                    <td class="border-2 px-2 text-center border-black">2 à 3 cuillères à café</td>
+                    <td class="border-2 px-2 text-center border-black">15 g</td>
+                </tr>
+                <tr>
+                    <td class="border-2 px-2 text-center border-black"> > 2 ans</td>
+                    <td class="border-2 px-2 text-center border-black">4 cuillères à café</td>
+                    <td class="border-2 px-2 text-center border-black">20 g</td>
+                </tr>
+                <tr>
+                    <td class="border-2 px-2 text-center border-black"> > 3 ans</td>
+                    <td class="border-2 px-2 text-center border-black">6 cuillères à café</td>
+                    <td class="border-2 px-2 text-center border-black">30 g</td>
+
+                </tr>
+            </table>
         </div>
-        <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-                <p class="text-sm text-gray-600 flex items-center">
 
-
-                </p>
-                <div class="text-gray-900 font-bold text-xl mb-2">La recette du jour</div>
-                <p class="text-gray-700 text-base"> Tartiflette revisité - Lorraine</p>
-            </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aliquam dicta eum ut quae reprehenderit. Animi, magni assumenda! Rem tenetur maiores ipsam, perspiciatis quidem alias dolore eligendi error blanditiis accusantium?
-
-            </p>
-            <div class="flex items-center mt-8">
-                <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="">
-                <div class="text-sm">
-                    <p class="text-gray-900 leading-none">anthony "Admin"</p>
-                    <p class="text-gray-600">02-03-2020</p>
-                </div>
-            </div>
-        </div>
     </div>
 
     
+
     <div class=" w-full flex ">
 
         <div class=" mx-auto w-full h-full" id="boxrecipe">
@@ -244,58 +287,59 @@ include_once('bdd.php');
                     <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                         <article class="overflow-hidden rounded-lg ">
 
-                        
-                        <p class="flex"><?php
 
-                            if(isset($_POST['titre_des_recettes'])) {
+                            <p class="flex"><?php
 
-                                $titre_des_recettes = $_POST['titre_des_recettes'];
-                                 $sql = "SELECT * FROM recipe WHERE title LIKE '%" . $titre_des_recettes . "%'";
-                                $bdd = new Bdd();
-                                $requete = $bdd->getBdd()->prepare($sql);
-                                $requete->execute();
-                                $datatitre = $requete->fetchAll();
+                                            if (isset($_POST['titre_des_recettes'])) {
 
-                             }
-                                
-                                if(isset($_POST["titre_des_recettes"])) {
-                                    foreach ($datatitre as $value) {
-                                    ?><div class="block justify-between shadow bg-gray-200 ">
-                                    <div class="mx-2">Titre de la recette : <?php echo $value["title"]; ?></div>
-                                    <div class="mx-2">Contenu de la recette : <?php echo $value["content"]; ?></div>
-                                    <div class="mx-2">Temps de préparation : <?php echo $value["duree"]; ?></div>
-                                    <div class="mx-2">Nombre de personnes : <?php echo $value["persons"]; ?></div>
-                                    <div class="mx-2 border-b-4 border-orange-400  "><?php echo $value['image'] . '<img class="w-38" src="img/' . $value["image"] . '">'; ?></div><p>
-                        <?php } }?> 
+                                                $titre_des_recettes = $_POST['titre_des_recettes'];
+                                                $sql = "SELECT * FROM recipe WHERE title LIKE '%" . $titre_des_recettes . "%'";
+                                                $bdd = new Bdd();
+                                                $requete = $bdd->getBdd()->prepare($sql);
+                                                $requete->execute();
+                                                $datatitre = $requete->fetchAll();
+                                            }
+
+                                            if (isset($_POST["titre_des_recettes"])) {
+                                                foreach ($datatitre as $value) {
+                                            ?><div class="block justify-between shadow bg-gray-200 ">
+                                            <div class="mx-2">Titre de la recette : <?php echo $value["title"]; ?></div>
+                                            <div class="mx-2">Contenu de la recette : <?php echo $value["content"]; ?></div>
+                                            <div class="mx-2">Temps de préparation : <?php echo $value["duree"]; ?></div>
+                                            <div class="mx-2">Nombre de personnes : <?php echo $value["persons"]; ?></div>
+                                            <div class="mx-2 border-b-4 border-orange-400  "><?php echo $value['image'] . '<img class="w-38" src="img/' . $value["image"] . '">'; ?></div>
+                                            <p>
+                                        <?php }
+                                            } ?>
 
 
 
-                            <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                                <a class="flex items-center no-underline hover:underline text-black" href="#">
-                                    <p class="ml-2 text-sm">
-                                    </p>
-                                </a>
-                                <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                                    
-                                </a>
-                            </footer>
-                            <div>
+                                        <div class="flex items-center justify-between leading-none p-2 md:p-4">
+                                            <a class="flex items-center no-underline hover:underline text-black" href="#">
+                                                <p class="ml-2 text-sm">
+                                                </p>
+                                            </a>
+                                            <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
 
-                            </div>   
+                                            </a>
+                                        </div>
+                                        <div>
+
+                                        </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex justify-center mt-8">
-        <button id="" class="border border-orange-400 text-orange-400 block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:bg-orange-400 hover:text-white">
+    <div class="flex justify-center pb-8">
+        <button id="" class="border-4 border-green-300 text-black block rounded-sm font-bold py-4 px-6 mr-2 flex items-center hover:bg-green-300 hover:text-black">
             <svg class="h-5 w-5 mr-2 fill-current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
                 <path id="XMLID_10_" d="M438,372H36.355l72.822-72.822c9.763-9.763,9.763-25.592,0-35.355c-9.763-9.764-25.593-9.762-35.355,0 l-115.5,115.5C-46.366,384.01-49,390.369-49,397s2.634,12.989,7.322,17.678l115.5,115.5c9.763,9.762,25.593,9.763,35.355,0 c9.763-9.763,9.763-25.592,0-35.355L36.355,422H438c13.808,0,25-11.193,25-25S451.808,372,438,372z"></path>
             </svg>
             Previous page
         </button>
-        <button class="  border border-orange-400 bg-orange-400 text-white block rounded-sm font-bold py-4 px-6 ml-2 flex items-center">
+        <button class="  border border-green-300 bg-green-300 text-black block rounded-sm font-bold py-4 px-6 ml-2 flex items-center">
             Next page
             <svg class="h-5 w-5 ml-2 fill-current" clasversion="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
                 <path id="XMLID_11_" d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0
@@ -335,36 +379,36 @@ include_once('bdd.php');
 </body>
 
 
-<footer class="pt-10">
-    <div class="bg-orange-400  md:flex ">
+<footer class="">
+    <div class="   md:flex " id="accueilnav">
 
-        <div class="border-orange-400">
+        <div class="">
             <a href="index.php">
-                <img src="img/unnamed.jpg" class="border-orange-400 border-4 pt-20" alt="la description textuelle de ton image"id="logosite" />
+                <img src="img/unnamed.jpg" class="  pt-20" alt="la description textuelle de ton image" id="logosite" />
             </a>
         </div>
 
-        <div class="w-full text-justify lg:mx-auto xl:mx-auto px-10 py-10  w-1/4">
-            <h4 class="border-b border-orange-800 mb-6">A PROPOS</h4>
+        <div class="w-full text-black text-justify lg:mx-auto xl:mx-auto px-10 py-10  w-1/4">
+            <h4 class="border-b border-green-300 mb-6">A PROPOS</h4>
             <div class="mx-auto  text-justify">
                 <li><a href="">Conditions géneral d'utilisateurs</a></li>
                 <li><a href="">A propos de nous</a></li>
                 <li><a href="">Notre Histoire</a></li>
                 <li><a href="">Informations géneral</a></li>
-                
+
             </div>
 
 
         </div>
 
-        <div class="w-full xl:mx-auto px-10 py-10 w-1/4 ">
-            <h4 class="border-b border-orange-800 mb-6">SUIVEZ NOUS</h4>
+        <div class="text-black w-full xl:mx-auto px-10 py-10 w-1/4 ">
+            <h4 class="border-b border-green-300 mb-6">SUIVEZ NOUS</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio eum soluta neque. Doloremque vero odio possimus cum quae at dolorum assumenda facilis sed, laborum obcaecati in reiciendis eius, necessitatibus deserunt.. </p>
 
         </div>
 
-        <div class="w-full mx-auto px-10 py-10 w-1/4">
-            <h4 class="border-b border-orange-800 mb-6">MENTIONS LEGALES</h4>
+        <div class="w-full text-black mx-auto px-10 py-10 w-1/4">
+            <h4 class="border-b border-green-300 mb-6">MENTIONS LEGALES</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>

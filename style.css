@@ -1,13 +1,16 @@
 
  #accueilnav {
   
-  color: #6e5656;
+  color: #96ffc2;
 } 
 
- a:hover {
-  color:#6e5656;
+footer {
+  background-color: #92b8fc;
 
-} 
+  
+}
+
+
 
 /* #bordercolor a:hover{
   border-color: #6e5656;
@@ -20,12 +23,13 @@
 
 #barre {
 
-  background-color: #6e5656;
+  background-color: #96ffc2;
 }
 
-#navbar {
+#navbar, #remplacer  {
 
-    background-color: #edae55;
+    
+    background-color: #92b8fc;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -55,7 +59,7 @@
   #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
   #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
   #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color:#edae55;  /*Set to match the Tailwind colour you want the active one to be */
+    color:#92b8fc;  /*Set to match the Tailwind colour you want the active one to be */
   }
   
   #caroussel img  {
@@ -67,7 +71,7 @@
  
 
   #adminbutton {
-    background-color: #edae55;
+    background-color: #92b8fc;
   }
 
   *{

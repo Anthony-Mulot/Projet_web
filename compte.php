@@ -155,19 +155,19 @@
 
 
     </div>
-    <div class="bg-gray-400  flex-auto px-5 py-12">
+    <div class="bg-pink-100  flex-auto px-5 py-12">
 
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-3xl bg-pink-100  mx-auto">
             <h1 class="text-center font-calibri text-black text-4xl pb-4"><i class="fas fa-user-edit"></i> Modification des informations de votre compte :</h1>
 
             <form class="w-full h-full pt-6" method="POST" action="remplace.php">
                 <div class="flex mb-4 justify-center align-items items-center">
                     <div class="w-1/2 px-3 ">
                         <label class="font-calibri block border-gray-200 rounded ">Changer votre login :</label>
-                        <input type="text" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800 " name="login" id="tj" />
+                        <input type="text" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800 " name="login" id="tj" />
                     </div>
                     <div class="flex justify-center mt-6 h-10">
-                        <button type="submit" value="remplacer" id="remplacer" class="bg-orange-400 text-white rounded  hover:bg-orange-400 text-black hover:text-white px-10  " name="remplacer">Entrer</button>
+                        <button type="submit" value="remplacer" id="remplacer" class=" text-white rounded  hover: text-black hover:text-white px-10  " name="remplacer">Entrer</button>
                     </div>
                 </div>
             </form>
@@ -176,10 +176,10 @@
                 <div class="flex mb-4 justify-center align-items items-center ">
                     <div class="w-1/2 px-3 ">
                         <label class="font-calibri block">Changer votre mot de passe :</label>
-                        <input type="password" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white  focus:border-yellow-800 " name="password" id="cj" />
+                        <input type="password" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white  focus:border-yellow-800 " name="password" id="cj" />
                     </div>
                     <div class="flex justify-center mt-6 h-10">
-                        <button type="submit" value="remplacer" id="remplacer" class="bg-orange-400 text-white rounded  hover:bg-orange-400 text-black hover:text-white px-10  " value="remplacer" name="remplacepass">Entrer</button>
+                        <button type="submit" value="remplacer" id="remplacer" class=" text-white rounded  hover: text-black hover:text-white px-10  " value="remplacer" name="remplacepass">Entrer</button>
                     </div>
                 </div>
             </form>
@@ -188,10 +188,10 @@
                 <div class="flex mb-4 justify-center align-items items-center">
                     <div class="w-1/2 px-3 ">
                         <label class="font-calibri block">Changer votre email :</label>
-                        <input type="email" class="w-full bg-gray-100 appearance-none border-2 border-orange-400 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800 " name="email" id="cj" />
+                        <input type="email" class="w-full bg-gray-100 appearance-none border-2 border-blue-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-yellow-800 " name="email" id="cj" />
                     </div>
                     <div class="flex justify-center mt-6 h-10">
-                        <button type="submit" value="remplacer" id="remplacer" class=" bg-orange-400 text-white rounded  hover:bg-orange-400 text-black hover:text-white px-10  " name="remplacemail">Entrer</button>
+                        <button type="submit" value="remplacer" id="remplacer" class="  text-white rounded  hover: text-black hover:text-white px-10  " name="remplacemail">Entrer</button>
                     </div>
                 </div>
             </form>
@@ -226,16 +226,16 @@
     </script>
 </body>
 <footer>
-    <div class="bg-orange-400  md:flex ">
+    <div class="  md:flex ">
 
         <div class="border-orange-400">
             <a href="index.php">
-                <img src="img/unnamed.jpg" class="border-orange-400 border-4 pt-20" alt="la description textuelle de ton image"id="logosite" />
+                <img src="img/unnamed.jpg" class=" pt-20" alt="la description textuelle de ton image"id="logosite" />
             </a>
         </div>
 
         <div class="w-full text-justify lg:mx-auto xl:mx-auto px-10 py-10  w-1/4">
-            <h4 class="border-b border-orange-800 mb-6">A PROPOS</h4>
+            <h4 class="border-b border-green-300 mb-6">A PROPOS</h4>
             <div class="mx-auto text-justify">
                 <li><a href="">Condition géneral d'utilisateur</a></li>
                 <li><a href="">A propos de nous</a></li>
@@ -248,13 +248,13 @@
         </div>
 
         <div class="w-full xl:mx-auto px-10 py-10 w-1/4 ">
-            <h4 class="border-b border-orange-800 mb-6">SUIVEZ NOUS</h4>
+            <h4 class="border-b border-green-300 mb-6">SUIVEZ NOUS</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio eum soluta neque. Doloremque vero odio possimus cum quae at dolorum assumenda facilis sed, laborum obcaecati in reiciendis eius, necessitatibus deserunt.. </p>
 
         </div>
 
         <div class="w-full mx-auto px-10 py-10 w-1/4">
-            <h4 class="border-b border-orange-800 mb-6">MENTIONS LEGALES</h4>
+            <h4 class="border-b border-green-300 mb-6">MENTIONS LEGALES</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>

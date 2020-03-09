@@ -164,7 +164,7 @@
 
     <div class="">
 
-        <div class="flex-grow mb-8 mx-auto  mx-8 xl:mx-20 xl:mt-6 ">
+        <div class="flex-grow mb-8 mx-auto  mx-8  ">
             <div class="carousel relative -2xl bg-white " id="caroussel">
                 <div class="carousel-inner xl:h-64 relative overflow-hidden ">
                     <!--Slide 1-->

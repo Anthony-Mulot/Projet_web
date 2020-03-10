@@ -89,7 +89,9 @@
                                     </li>
                                 </ul>
                                 </ul>
-                                                                
+                                <a href="shoppingList.php" class="block mb-2 hover:text-green-200 xl:mb-0 lg:inline-block text-md font-bold   text-gray-700   hover: mx-2  xl:p-2  rounded-lg">
+                                MON CALENDRIER
+                            </a>                      
                                
                                     <a href="shoppingList.php" class="block mb-2 hover:text-green-200 xl:mb-0 lg:inline-block text-md font-bold   text-gray-700   hover: mx-2  xl:p-2  rounded-lg">
                                         SHOPPING LIST

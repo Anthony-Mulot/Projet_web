@@ -51,7 +51,7 @@
                                 <a href="index.php" class="block lg:inline-block text-md font-bold  sm:pb-0 pb-1 text-white   hover: mx-2  xl:p-2  rounded-lg">
                                     ACCUEIL
                                 </a>
-                                
+
                                 <a href="allrecette.php" class="block lg:inline-block text-md font-bold sm:pb-0 pb-1 text-white   hover: mx-2  xl:p-2  rounded-lg">
                                     RECETTES
                                 </a>
@@ -59,17 +59,17 @@
                                     NOUS CONTACTER
                                 </a>
                             </div>
-                                <div class="flex pl-4">
-
-                                     
+                            <div class="flex pl-4">
 
 
-                                </div>
+
+
                             </div>
                         </div>
                     </div>
-                </nav>
             </div>
+            </nav>
+        </div>
         </div>
     </header>
 
@@ -98,25 +98,32 @@
                                 <label class="block mb-2 text-sm font-bold text-gray-700" for="username">
                                     Nom d'utilisateur
                                 </label>
-                                <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="" name="login" />
-                                <div id="dalert" class="text-red-500 mb-3 invisible" role="alert"><p>Champ obligatoire</p></div>
+                                <span id="missPrenom"></span></br>
+                                <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="" name="login" required />
+                                <div id="dalert" class="text-red-500 mb-3 invisible" role="alert">
+                                    <p>Champ obligatoire</p>
+                                </div>
 
                             </div>
                             <div class="mb-4">
                                 <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
                                     Mot de passe
                                 </label>
-                                <input class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="" name="password" />
-                                <div id="dalert" class="text-red-500 mb-3 invisible" role="alert"><p>Champ obligatoire</p></div>
+                                <input class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="" name="password" required />
+                                <div id="dalert" class="text-red-500 mb-3 invisible" role="alert">
+                                    <p>Champ obligatoire</p>
+                                </div>
 
                             </div>
 
                             <div class="mb-4">
-                                <label class="block mb-2 text-sm font-bold text-gray-700" for="username">
+                                <label class="block mb-2 text-sm font-bold text-gray-700" for="username" required>
                                     Adresse Mail
                                 </label>
                                 <input class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="azerty@lorem.fr" name="email" />
-                                <div id="dalert" class="text-red-500 mb-3 invisible" role="alert"><p>Champ obligatoire</p></div>
+                                <div id="dalert" class="text-red-500 mb-3 invisible" role="alert">
+                                    <p>Champ obligatoire</p>
+                                </div>
 
                             </div>
                             <div class="mb-6 text-center">
@@ -131,6 +138,38 @@
         </div>
     </div>
     <script>
+        var start = document.getElementsByName('valider');
+
+        function valider() {
+            if (document.getElementById('username').value == "") {
+                alert("Veuillez entrer votre prénom!");
+                return false;
+            }
+
+
+            if (document.getElementById('email').value == "") {
+                alert("Veuillez entrer votre e-mail !");
+                return false;
+            }
+
+            if (document.getElementById('password').length >= 8 )
+ {
+                alert("Veuillez choisir un mot de passe de minimum 8 caractères");
+                return false;
+            }
+
+            if (document.getElementById('password').value == "") {
+                alert("Veuillez entrer votre mot de passe !");
+                 
+
+                
+                return false;
+            }
+        }
+
+        start[0].addEventListener('click', valider, false);
+
+
         // Navbar Toggle
         document.addEventListener('DOMContentLoaded', function() {
 
@@ -164,7 +203,7 @@
 
         <div class="border-orange-400">
             <a href="index.php">
-                <img src="img/unnamed.jpg" class="border-orange-400 border-4 pt-20" alt="la description textuelle de ton image"id="logosite" />
+                <img src="img/unnamed.jpg" class="border-orange-400 border-4 pt-20" alt="la description textuelle de ton image" id="logosite" />
             </a>
         </div>
 
